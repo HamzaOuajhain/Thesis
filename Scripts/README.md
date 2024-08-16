@@ -1,4 +1,4 @@
-# In This section I will provide some Scripts/ Jupyter notebooks that I created during my thesis in Slam.
+# In This section I will provide some Scripts notebooks that I created during my thesis in Slam.
 
 
 ### 360.py 
@@ -30,11 +30,29 @@ This Python script automates the process of rendering multiple views of a 3D sce
 - Normal maps: `render_results_500/r_[index]_Normal.png`
 - Camera data: `render_results_500/transforms.json`
 
-##### Requirements
+
+### Camera_Intrinsics.py
+
+A Blender Python script to compute and extract intrinsic camera parameters.
+
+## Features
+
+- Calculates the intrinsic camera matrix from Blender camera settings
+- Supports both vertical and horizontal sensor fit modes
+- Accounts for pixel aspect ratio and render resolution settings
+
+## Usage
+
+1. Open your Blender project
+2. Load this script into Blender's Text Editor
+3. Modify the `cam_name` variable if needed (default: "Camera_R")
+4. Run the script within Blender
+
+## Output
+
+Prints the intrinsic camera matrix for the specified camera to the Blender console.
+
+## Requirements
 
 - Blender 2.8+
 - Python 3.7+
-
-##### Note
-
-Ensure your Blender scene is set up with a camera named 'Camera' before running the script.
