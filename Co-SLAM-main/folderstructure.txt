@@ -1,0 +1,522 @@
+tree -L 3
+.
+├── config.py
+├── configs
+│   ├── Azure
+│   │   ├── apartment.yaml
+│   │   └── azure.yaml
+│   ├── IPhone
+│   │   ├── iphone.yaml
+│   │   └── statue.yaml
+│   ├── Monkey_model
+│   │   ├── monkey.yaml
+│   │   └── my_config.yaml
+│   ├── nerf
+│   │   ├── chair.yaml
+│   │   ├── iphone_version.yaml
+│   │   ├── lego.yaml
+│   │   └── synthetic_base.yaml
+│   ├── Replica
+│   │   ├── office0.yaml
+│   │   ├── office1.yaml
+│   │   ├── office2.yaml
+│   │   ├── office3.yaml
+│   │   ├── office4.yaml
+│   │   ├── replica.yaml
+│   │   ├── room0.yaml
+│   │   ├── room1.yaml
+│   │   └── room2.yaml
+│   ├── ScanNet
+│   │   ├── scannet.yaml
+│   │   ├── scene0000.yaml
+│   │   ├── scene0059.yaml
+│   │   ├── scene0106.yaml
+│   │   ├── scene0169.yaml
+│   │   ├── scene0181.yaml
+│   │   └── scene0207.yaml
+│   ├── Synthetic
+│   │   ├── br.yaml
+│   │   ├── ck.yaml
+│   │   ├── gr.yaml
+│   │   ├── gwr.yaml
+│   │   ├── ma.yaml
+│   │   ├── synthetic.yaml
+│   │   ├── tg.yaml
+│   │   └── wr.yaml
+│   ├── Tum
+│   │   ├── fr1_desk.yaml
+│   │   ├── fr2_xyz.yaml
+│   │   ├── fr3_office.yaml
+│   │   └── tum.yaml
+│   └── Tum_dagger
+│       ├── fr1_desk.yaml
+│       ├── fr2_xyz.yaml
+│       ├── fr3_office.yaml
+│       └── tum.yaml
+├── coslam_mp.py
+├── coslam.py
+├── data
+│   ├── Changing_names_transforming_json_to_txt.ipynb
+│   ├── lego
+│   │   ├── 800x800results
+│   │   ├── results
+│   │   └── traj.txt
+│   ├── Monkey_rotating
+│   │   ├── Conventions.ipynb
+│   │   ├── ground-truth
+│   │   ├── notworking.txt
+│   │   ├── results
+│   │   ├── traj.txt
+│   │   └── withscript.txt
+│   ├── resulting_teabox_exr
+│   │   ├── results
+│   │   └── traj.txt
+│   ├── SyntheticData
+│   │   ├── chair
+│   │   └── lego
+│   ├── test
+│   │   ├── depth000000.png
+│   │   ├── depth000001.png
+│   │   ├── depth000002.png
+│   │   ├── depth000003.png
+│   │   ├── depth000004.png
+│   │   ├── depth000005.png
+│   │   ├── depth000006.png
+│   │   ├── depth000007.png
+│   │   ├── depth000008.png
+│   │   ├── depth000009.png
+│   │   ├── depth000010.png
+│   │   ├── depth000011.png
+│   │   ├── depth000012.png
+│   │   ├── depth000013.png
+│   │   ├── depth000014.png
+│   │   ├── depth000015.png
+│   │   ├── depth000016.png
+│   │   ├── depth000017.png
+│   │   ├── depth000018.png
+│   │   ├── depth000019.png
+│   │   ├── depth000020.png
+│   │   ├── depth000021.png
+│   │   ├── depth000022.png
+│   │   ├── depth000023.png
+│   │   ├── depth000024.png
+│   │   ├── depth000025.png
+│   │   ├── depth000026.png
+│   │   ├── depth000027.png
+│   │   ├── depth000028.png
+│   │   ├── depth000029.png
+│   │   ├── depth000030.png
+│   │   ├── depth000031.png
+│   │   ├── depth000032.png
+│   │   ├── depth000033.png
+│   │   ├── depth000034.png
+│   │   ├── depth000035.png
+│   │   ├── depth000036.png
+│   │   ├── depth000037.png
+│   │   ├── depth000038.png
+│   │   ├── depth000039.png
+│   │   ├── depth000040.png
+│   │   ├── depth000041.png
+│   │   ├── depth000042.png
+│   │   ├── depth000043.png
+│   │   ├── depth000044.png
+│   │   ├── depth000045.png
+│   │   ├── depth000046.png
+│   │   ├── depth000047.png
+│   │   ├── depth000048.png
+│   │   ├── depth000049.png
+│   │   ├── depth000050.png
+│   │   ├── depth000051.png
+│   │   ├── depth000052.png
+│   │   ├── depth000053.png
+│   │   ├── depth000054.png
+│   │   ├── depth000055.png
+│   │   ├── depth000056.png
+│   │   ├── depth000057.png
+│   │   ├── depth000058.png
+│   │   ├── depth000059.png
+│   │   ├── depth000060.png
+│   │   ├── depth000061.png
+│   │   ├── depth000062.png
+│   │   ├── depth000063.png
+│   │   ├── depth000064.png
+│   │   ├── depth000065.png
+│   │   ├── depth000066.png
+│   │   ├── depth000067.png
+│   │   ├── depth000068.png
+│   │   ├── depth000069.png
+│   │   ├── depth000070.png
+│   │   ├── depth000071.png
+│   │   ├── depth000072.png
+│   │   ├── depth000073.png
+│   │   ├── depth000074.png
+│   │   ├── depth000075.png
+│   │   ├── depth000076.png
+│   │   ├── depth000077.png
+│   │   ├── depth000078.png
+│   │   ├── depth000079.png
+│   │   ├── depth000080.png
+│   │   ├── depth000081.png
+│   │   ├── depth000082.png
+│   │   ├── depth000083.png
+│   │   ├── depth000084.png
+│   │   ├── depth000085.png
+│   │   ├── depth000086.png
+│   │   ├── depth000087.png
+│   │   ├── depth000088.png
+│   │   ├── depth000089.png
+│   │   ├── depth000090.png
+│   │   ├── depth000091.png
+│   │   ├── depth000092.png
+│   │   ├── depth000093.png
+│   │   ├── depth000094.png
+│   │   ├── depth000095.png
+│   │   ├── depth000096.png
+│   │   ├── depth000097.png
+│   │   ├── depth000098.png
+│   │   ├── depth000099.png
+│   │   ├── depth000100.png
+│   │   ├── depth000101.png
+│   │   ├── depth000102.png
+│   │   ├── depth000103.png
+│   │   ├── depth000104.png
+│   │   ├── depth000105.png
+│   │   ├── depth000106.png
+│   │   ├── depth000107.png
+│   │   ├── depth000108.png
+│   │   ├── depth000109.png
+│   │   ├── depth000110.png
+│   │   ├── depth000111.png
+│   │   ├── depth000112.png
+│   │   ├── depth000113.png
+│   │   ├── depth000114.png
+│   │   ├── depth000115.png
+│   │   ├── depth000116.png
+│   │   ├── depth000117.png
+│   │   ├── depth000118.png
+│   │   ├── depth000119.png
+│   │   ├── depth000120.png
+│   │   ├── depth000121.png
+│   │   ├── depth000122.png
+│   │   ├── depth000123.png
+│   │   ├── depth000124.png
+│   │   ├── depth000125.png
+│   │   ├── depth000126.png
+│   │   ├── depth000127.png
+│   │   ├── depth000128.png
+│   │   ├── depth000129.png
+│   │   ├── depth000130.png
+│   │   ├── depth000131.png
+│   │   ├── depth000132.png
+│   │   ├── depth000133.png
+│   │   ├── depth000134.png
+│   │   ├── depth000135.png
+│   │   ├── depth000136.png
+│   │   ├── depth000137.png
+│   │   ├── depth000138.png
+│   │   ├── depth000139.png
+│   │   ├── depth000140.png
+│   │   ├── depth000141.png
+│   │   ├── depth000142.png
+│   │   ├── depth000143.png
+│   │   ├── depth000144.png
+│   │   ├── depth000145.png
+│   │   ├── depth000146.png
+│   │   ├── depth000147.png
+│   │   ├── depth000148.png
+│   │   ├── depth000149.png
+│   │   ├── depth000150.png
+│   │   ├── depth000151.png
+│   │   ├── depth000152.png
+│   │   ├── depth000153.png
+│   │   ├── depth000154.png
+│   │   ├── depth000155.png
+│   │   ├── depth000156.png
+│   │   ├── depth000157.png
+│   │   ├── depth000158.png
+│   │   ├── depth000159.png
+│   │   ├── depth000160.png
+│   │   ├── depth000161.png
+│   │   ├── depth000162.png
+│   │   ├── depth000163.png
+│   │   ├── depth000164.png
+│   │   ├── depth000165.png
+│   │   ├── depth000166.png
+│   │   ├── depth000167.png
+│   │   ├── depth000168.png
+│   │   ├── depth000169.png
+│   │   ├── depth000170.png
+│   │   ├── depth000171.png
+│   │   ├── depth000172.png
+│   │   ├── depth000173.png
+│   │   ├── depth000174.png
+│   │   ├── depth000175.png
+│   │   ├── depth000176.png
+│   │   ├── depth000177.png
+│   │   ├── depth000178.png
+│   │   ├── depth000179.png
+│   │   ├── depth000180.png
+│   │   ├── depth000181.png
+│   │   ├── depth000182.png
+│   │   ├── depth000183.png
+│   │   ├── depth000184.png
+│   │   ├── depth000185.png
+│   │   ├── depth000186.png
+│   │   ├── depth000187.png
+│   │   ├── depth000188.png
+│   │   ├── depth000189.png
+│   │   ├── depth000190.png
+│   │   ├── depth000191.png
+│   │   ├── depth000192.png
+│   │   ├── depth000193.png
+│   │   ├── depth000194.png
+│   │   ├── depth000195.png
+│   │   ├── depth000196.png
+│   │   ├── depth000197.png
+│   │   ├── depth000198.png
+│   │   ├── depth000199.png
+│   │   ├── frame000000.png
+│   │   ├── frame000001.png
+│   │   ├── frame000002.png
+│   │   ├── frame000003.png
+│   │   ├── frame000004.png
+│   │   ├── frame000005.png
+│   │   ├── frame000006.png
+│   │   ├── frame000007.png
+│   │   ├── frame000008.png
+│   │   ├── frame000009.png
+│   │   ├── frame000010.png
+│   │   ├── frame000011.png
+│   │   ├── frame000012.png
+│   │   ├── frame000013.png
+│   │   ├── frame000014.png
+│   │   ├── frame000015.png
+│   │   ├── frame000016.png
+│   │   ├── frame000017.png
+│   │   ├── frame000018.png
+│   │   ├── frame000019.png
+│   │   ├── frame000020.png
+│   │   ├── frame000021.png
+│   │   ├── frame000022.png
+│   │   ├── frame000023.png
+│   │   ├── frame000024.png
+│   │   ├── frame000025.png
+│   │   ├── frame000026.png
+│   │   ├── frame000027.png
+│   │   ├── frame000028.png
+│   │   ├── frame000029.png
+│   │   ├── frame000030.png
+│   │   ├── frame000031.png
+│   │   ├── frame000032.png
+│   │   ├── frame000033.png
+│   │   ├── frame000034.png
+│   │   ├── frame000035.png
+│   │   ├── frame000036.png
+│   │   ├── frame000037.png
+│   │   ├── frame000038.png
+│   │   ├── frame000039.png
+│   │   ├── frame000040.png
+│   │   ├── frame000041.png
+│   │   ├── frame000042.png
+│   │   ├── frame000043.png
+│   │   ├── frame000044.png
+│   │   ├── frame000045.png
+│   │   ├── frame000046.png
+│   │   ├── frame000047.png
+│   │   ├── frame000048.png
+│   │   ├── frame000049.png
+│   │   ├── frame000050.png
+│   │   ├── frame000051.png
+│   │   ├── frame000052.png
+│   │   ├── frame000053.png
+│   │   ├── frame000054.png
+│   │   ├── frame000055.png
+│   │   ├── frame000056.png
+│   │   ├── frame000057.png
+│   │   ├── frame000058.png
+│   │   ├── frame000059.png
+│   │   ├── frame000060.png
+│   │   ├── frame000061.png
+│   │   ├── frame000062.png
+│   │   ├── frame000063.png
+│   │   ├── frame000064.png
+│   │   ├── frame000065.png
+│   │   ├── frame000066.png
+│   │   ├── frame000067.png
+│   │   ├── frame000068.png
+│   │   ├── frame000069.png
+│   │   ├── frame000070.png
+│   │   ├── frame000071.png
+│   │   ├── frame000072.png
+│   │   ├── frame000073.png
+│   │   ├── frame000074.png
+│   │   ├── frame000075.png
+│   │   ├── frame000076.png
+│   │   ├── frame000077.png
+│   │   ├── frame000078.png
+│   │   ├── frame000079.png
+│   │   ├── frame000080.png
+│   │   ├── frame000081.png
+│   │   ├── frame000082.png
+│   │   ├── frame000083.png
+│   │   ├── frame000084.png
+│   │   ├── frame000085.png
+│   │   ├── frame000086.png
+│   │   ├── frame000087.png
+│   │   ├── frame000088.png
+│   │   ├── frame000089.png
+│   │   ├── frame000090.png
+│   │   ├── frame000091.png
+│   │   ├── frame000092.png
+│   │   ├── frame000093.png
+│   │   ├── frame000094.png
+│   │   ├── frame000095.png
+│   │   ├── frame000096.png
+│   │   ├── frame000097.png
+│   │   ├── frame000098.png
+│   │   ├── frame000099.png
+│   │   ├── frame000100.png
+│   │   ├── frame000101.png
+│   │   ├── frame000102.png
+│   │   ├── frame000103.png
+│   │   ├── frame000104.png
+│   │   ├── frame000105.png
+│   │   ├── frame000106.png
+│   │   ├── frame000107.png
+│   │   ├── frame000108.png
+│   │   ├── frame000109.png
+│   │   ├── frame000110.png
+│   │   ├── frame000111.png
+│   │   ├── frame000112.png
+│   │   ├── frame000113.png
+│   │   ├── frame000114.png
+│   │   ├── frame000115.png
+│   │   ├── frame000116.png
+│   │   ├── frame000117.png
+│   │   ├── frame000118.png
+│   │   ├── frame000119.png
+│   │   ├── frame000120.png
+│   │   ├── frame000121.png
+│   │   ├── frame000122.png
+│   │   ├── frame000123.png
+│   │   ├── frame000124.png
+│   │   ├── frame000125.png
+│   │   ├── frame000126.png
+│   │   ├── frame000127.png
+│   │   ├── frame000128.png
+│   │   ├── frame000129.png
+│   │   ├── frame000130.png
+│   │   ├── frame000131.png
+│   │   ├── frame000132.png
+│   │   ├── frame000133.png
+│   │   ├── frame000134.png
+│   │   ├── frame000135.png
+│   │   ├── frame000136.png
+│   │   ├── frame000137.png
+│   │   ├── frame000138.png
+│   │   ├── frame000139.png
+│   │   ├── frame000140.png
+│   │   ├── frame000141.png
+│   │   ├── frame000142.png
+│   │   ├── frame000143.png
+│   │   ├── frame000144.png
+│   │   ├── frame000145.png
+│   │   ├── frame000146.png
+│   │   ├── frame000147.png
+│   │   ├── frame000148.png
+│   │   ├── frame000149.png
+│   │   ├── frame000150.png
+│   │   ├── frame000151.png
+│   │   ├── frame000152.png
+│   │   ├── frame000153.png
+│   │   ├── frame000154.png
+│   │   ├── frame000155.png
+│   │   ├── frame000156.png
+│   │   ├── frame000157.png
+│   │   ├── frame000158.png
+│   │   ├── frame000159.png
+│   │   ├── frame000160.png
+│   │   ├── frame000161.png
+│   │   ├── frame000162.png
+│   │   ├── frame000163.png
+│   │   ├── frame000164.png
+│   │   ├── frame000165.png
+│   │   ├── frame000166.png
+│   │   ├── frame000167.png
+│   │   ├── frame000168.png
+│   │   ├── frame000169.png
+│   │   ├── frame000170.png
+│   │   ├── frame000171.png
+│   │   ├── frame000172.png
+│   │   ├── frame000173.png
+│   │   ├── frame000174.png
+│   │   ├── frame000175.png
+│   │   ├── frame000176.png
+│   │   ├── frame000177.png
+│   │   ├── frame000178.png
+│   │   ├── frame000179.png
+│   │   ├── frame000180.png
+│   │   ├── frame000181.png
+│   │   ├── frame000182.png
+│   │   ├── frame000183.png
+│   │   ├── frame000184.png
+│   │   ├── frame000185.png
+│   │   ├── frame000186.png
+│   │   ├── frame000187.png
+│   │   ├── frame000188.png
+│   │   ├── frame000189.png
+│   │   ├── frame000190.png
+│   │   ├── frame000191.png
+│   │   ├── frame000192.png
+│   │   ├── frame000193.png
+│   │   ├── frame000194.png
+│   │   ├── frame000195.png
+│   │   ├── frame000196.png
+│   │   ├── frame000197.png
+│   │   ├── frame000198.png
+│   │   └── frame000199.png
+│   └── transforms_test.json
+├── datasets
+│   ├── dataset.py
+│   ├── __pycache__
+│   │   ├── dataset.cpython-311.pyc
+│   │   └── utils.cpython-311.pyc
+│   └── utils.py
+├── DOCUMENTATION.md
+├── external
+│   └── NumpyMarchingCubes
+│       ├── marching_cubes
+│       └── setup.py
+├── LICENSE
+├── media
+│   ├── coslam_teaser.gif
+│   └── coslam_teaser.mp4
+├── model
+│   ├── decoder.py
+│   ├── encodings.py
+│   ├── keyframe.py
+│   ├── scene_rep.py
+│   └── utils.py
+├── mp_slam
+│   ├── mapper.py
+│   └── tracker.py
+├── optimization
+│   ├── frame_align.py
+│   ├── pose_array.py
+│   └── utils.py
+├── __pycache__
+│   └── config.cpython-311.pyc
+├── README.md
+├── requirements.txt
+├── scripts
+│   ├── download_apartment.sh
+│   ├── download_replica.sh
+│   ├── download_rgbd.sh
+│   └── download_tum.sh
+├── tools
+│   ├── eval_ate.py
+│   └── vis_cameras.py
+├── utils.py
+└── vis_bound.ipynb
+
+35 directories, 483 files

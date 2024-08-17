@@ -1,0 +1,15 @@
+inherit_from: configs/Replica/My_experiment/replica_room1_base.yaml
+
+data:
+  exp_name: exp4
+  output: output/Replica/room1_exp4
+
+tracking:
+  use_adaptive_lr: False
+  lr_decay_factor: 0.95
+  lr_decay_steps: 1250
+
+mapping:
+  use_adaptive_lr: True
+  lr_decay_factor: 0.95
+  lr_decay_steps: 250

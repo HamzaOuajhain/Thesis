@@ -1,0 +1,11 @@
+inherit_from: configs/nerf/iphone_version.yaml
+
+mapping:
+  bound: [[-4.0, 4.0],[-4.0, 4.0],[-4.0, 4.0]]
+  marching_cubes_bound: [[-4.0, 4.0],[-4.0, 4.0],[-4.0, 4.0]]
+
+data:
+  datadir: data/new_chair
+  trainskip: 1
+  output: output/new_chair
+  exp_name: chair_demo

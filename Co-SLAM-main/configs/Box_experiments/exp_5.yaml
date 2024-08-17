@@ -1,0 +1,11 @@
+inherit_from: configs/Box_experiments/Base_box.yaml
+
+data:
+  exp_name: custom_flip_y
+
+loading_config:
+  convention: 'Custom'
+  custom:
+    flip_x: false
+    flip_y: true
+    flip_z: false

@@ -1,0 +1,11 @@
+inherit_from: configs/Thebox/box.yaml
+mapping:
+  bound: [[-5,5],[-5,5],[-5,5]]
+  marching_cubes_bound: [[-5,5],[-5,5],[-5,5]]
+
+
+data:
+  datadir: data/box_model
+  trainskip: 1
+  output: output/result_boxibox
+  exp_name: demo

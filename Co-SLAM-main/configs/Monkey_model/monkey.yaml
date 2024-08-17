@@ -1,0 +1,10 @@
+inherit_from: ./configs/Monkey_model/my_config.yaml
+mapping:
+  bound: [[-10.,10],[-10.,10],[-10.,10]] 
+  marching_cubes_bound: [[-10.,10],[-10.,10],[-10.,10]]
+  
+data:
+  datadir: data/Monkey_rotating
+  trainskip: 1
+  output: output/Monkey_rotating
+  exp_name: demo

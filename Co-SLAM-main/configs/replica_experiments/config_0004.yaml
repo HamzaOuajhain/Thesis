@@ -1,0 +1,7 @@
+inherit_from: configs/replica_experiments/base_config_replica.yaml
+mapping:
+  initial_lr_rot: 0.00001
+  initial_lr_trans: 0.00001
+data:
+  output: output/Replica/room1_exp4
+  exp_name: room1_exp4

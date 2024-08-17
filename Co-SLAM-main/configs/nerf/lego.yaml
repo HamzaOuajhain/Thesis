@@ -1,0 +1,11 @@
+inherit_from: configs/nerf/iphone_version.yaml
+
+mapping:
+  bound: [[-5.0, 5.0],[-5.0, 5.0],[-5.0, 5.0]]
+  marching_cubes_bound: [[-5.0, 5.0],[-5.0, 5.0],[-5.0, 5.0]]
+
+data:
+  datadir: data/lego
+  trainskip: 1
+  output: output/SyntheticData/lego
+  exp_name: lego_demo

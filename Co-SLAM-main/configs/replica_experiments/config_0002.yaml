@@ -1,0 +1,9 @@
+inherit_from: base_config_replica.yaml
+mapping:
+  initial_lr_rot: 0.001
+  initial_lr_trans: 0.001
+data:
+  datadir: data/Replica/room1
+  trainskip: 1
+  output: output/Replica/room1_exp2
+  exp_name: room1_exp2

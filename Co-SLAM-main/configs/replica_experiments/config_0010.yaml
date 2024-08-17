@@ -1,0 +1,7 @@
+inherit_from: configs/replica_experiments/base_config_replica.yaml
+mapping:
+  initial_lr_embed: 0.01
+  initial_lr_decoder: 0.01
+data:
+  output: output/Replica/room1_exp10
+  exp_name: room1_exp10

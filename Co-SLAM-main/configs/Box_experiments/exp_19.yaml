@@ -1,0 +1,12 @@
+inherit_from: configs/Box_experiments/Base_box.yaml
+
+data:
+  exp_name: rotate_flip_combo
+
+loading_config:
+  convention: 'Custom'
+  custom:
+    rotation: [0, -1, 0, 1, 0, 0, 0, 0, -1]
+    flip_x: true
+    flip_y: false
+    flip_z: true

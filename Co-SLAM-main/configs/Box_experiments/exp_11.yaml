@@ -1,0 +1,9 @@
+inherit_from: configs/Box_experiments/Base_box.yaml
+
+data:
+  exp_name: custom_rotate_z_90
+
+loading_config:
+  convention: 'Custom'
+  custom:
+    rotation: [0, -1, 0, 1, 0, 0, 0, 0, 1]

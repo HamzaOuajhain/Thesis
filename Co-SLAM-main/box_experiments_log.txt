@@ -1,0 +1,76 @@
+Running experiment with config: configs/Box_experiments/exp_10.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_11.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_12.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_13.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_14.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_15.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_16.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_17.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_18.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_19.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_1.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_2.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_3.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_4.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_5.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_6.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_7.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_8.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------
+Running experiment with config: configs/Box_experiments/exp_9.yaml
+/home/aspegique/Desktop/Thesis/Codes/Thesis/Co-SLAM/box_experiment.sh: line 23: python: command not found
+Experiment completed successfully
+----------------------------------------

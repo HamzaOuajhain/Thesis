@@ -1,0 +1,9 @@
+inherit_from: configs/Box_experiments/Base_box.yaml
+
+data:
+  exp_name: identity_transform
+
+loading_config:
+  convention: 'Custom'
+  custom:
+    rotation: [1, 0, 0, 0, 1, 0, 0, 0, 1]

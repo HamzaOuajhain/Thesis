@@ -1,0 +1,7 @@
+inherit_from: configs/Box_experiments/Base_box.yaml
+
+data:
+  exp_name: blender_convention
+
+loading_config:
+  convention: 'Blender'
