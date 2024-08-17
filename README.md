@@ -1,3 +1,6 @@
+#TODO: Explain modifications/ Add some visualisations
+
+
 # Co-SLAM Implementation
 
 This repository contains an improved implementation of Co-SLAM (Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM) along with tools for generating synthetic datasets using Blender.
@@ -31,23 +34,7 @@ Co-SLAM is a neural RGB-D SLAM system that performs robust camera tracking and h
 2. Run the Blender script to generate RGB and depth images.
 3. Use the provided Jupyter Notebook to post-process the generated data.
 
-### Running Co-SLAM
 
-1. Prepare your dataset in the required format.
-2. Configure parameters in `config.yaml`
-3. Run Co-SLAM:
-   ```
-   python coslam.py --config './configs/{Dataset}/{scene}.yaml'
-   ```
-
-### Running the Visualizer
-
-1. Ensure you have completed a Co-SLAM run for the dataset you want to visualize.
-2. Make sure the configuration file for the dataset is properly set up.
-3. Run the visualizer:
-   ```
-   python visualizer.py --config './configs/{Dataset}/{scene}.yaml'
-   ```
 
 ## Acknowledgments
 
