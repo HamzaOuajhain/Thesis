@@ -1,0 +1,3 @@
+[submodule "awesome-Implicit-NeRF-SLAM"]
+	path = awesome-Implicit-NeRF-SLAM
+	url = git@github.com:DoongLi/awesome-Implicit-NeRF-SLAM.git
