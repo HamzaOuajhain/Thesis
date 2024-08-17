@@ -8,7 +8,7 @@ Co-SLAM is a neural RGB-D SLAM system that performs robust camera tracking and h
 
 ## Repository Structure
 
-- `coslam/`: Core implementation of Co-SLAM algorithm
+- `Co-SLAM/`: Core implementation of Co-SLAM algorithm
 - `Data_Manipulation/`: Scripts for generating synthetic datasets using Blender and Jupyter notebook to further manipulate data in order to generate Replica like datasets.
 
 ## Getting Started
@@ -40,28 +40,29 @@ Co-SLAM is a neural RGB-D SLAM system that performs robust camera tracking and h
 2. Configure parameters in `config.yaml`
 3. Run Co-SLAM:
    ```
-   python coslam.py '--config ./configs/{Dataset}/{scene}.yaml'
-   
+   python coslam.py --config ./configs/{Dataset}/{scene}.yaml
    ```
+
 ### Running the Visualizer
 
-1. 
-2. 
-3. 
-
+1. Ensure you have completed a Co-SLAM run for the dataset you want to visualize
+2. Make sure the configuration file for the dataset is properly set up
+3. Run the visualizer:
+   ```
+   python visualizer.py --config ./configs/{Dataset}/{scene}.yaml
+   ```
 
 ## Acknowledgments
 
-This implementation is based on the Co-SLAM paper by Wang et al. For more detailed information about the implementation and synthetic dataset generation process, please refer to the accompanying thesis document.
+This project builds upon and is inspired by the following works:
 
-## Citation
-
-If you find this implementation or the accompanying thesis useful for your research, please consider citing both this work and the original Co-SLAM paper:
-
-```
-@inproceedings{wang2023coslam,
-    title={Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM},
-    author={Wang, Hengyi and Wang, Jingwen and Agapito, Lourdes},
-    booktitle={CVPR},
-    year={2023}
-}
+1. Wang, H., Wang, J., & Agapito, L. (2023). Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
+   ```
+   @inproceedings{wang2023coslam,
+       title={Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM},
+       author={Wang, Hengyi and Wang, Jingwen and Agapito, Lourdes},
+       booktitle={CVPR},
+       year={2023}
+   }
+   ```
+   [GitHub Repository](https://github.com/HengyiWang/Co-SLAM)
